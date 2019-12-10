@@ -7,9 +7,9 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
+@AllArgsConstructor
 @EqualsAndHashCode(of = {"name"})
 @Entity(name = "roles")
 public class Role {

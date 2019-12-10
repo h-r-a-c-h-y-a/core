@@ -7,9 +7,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Data
-@Getter
-@Setter
 @NoArgsConstructor
+@AllArgsConstructor
 @EqualsAndHashCode(of = {"email"})
 @Entity(name = "users")
 public class User {
@@ -29,13 +28,13 @@ public class User {
     inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles = new HashSet<>();
 
-    public void addRole(Role role){
-        roles.add(role);
-        role.getUsers().add(this);
-    }
-
-    public void removeRole(Role role) {
-        roles.remove(role);
-        role.getUsers().remove(this);
-    }
+//    public void addRole(Role role){
+//        roles.add(role);
+//        role.getUsers().add(this);
+//    }
+//
+//    public void removeRole(Role role) {
+//        roles.remove(role);
+//        role.getUsers().remove(this);
+//    }
 }
