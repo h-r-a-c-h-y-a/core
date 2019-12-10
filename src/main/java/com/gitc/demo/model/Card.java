@@ -1,10 +1,12 @@
 package com.gitc.demo.model;
 
 import lombok.Data;
+import lombok.ToString;
 
 import javax.persistence.*;
 
 @Data
+@ToString
 @Entity(name = "cards")
 public class Card {
 

@@ -1,12 +1,14 @@
 package com.gitc.demo.model;
 
 import lombok.Data;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
 @Data
+@ToString
 @Entity(name = "en_words")
 public class EnWord {
 
