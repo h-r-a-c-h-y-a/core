@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "hibernate.jdbc.use_streams_for_binary",
+      "type": "java.lang.String",
+      "description": "Description for hibernate.jdbc.use_streams_for_binary."
+    }
+  ]
+}
